@@ -121,15 +121,12 @@
 <script src="{{asset('/')}}assets/js/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="{{asset('/')}}assets/js/sparkline.js"></script>
-<!-- JQVMap -->
-<!-- <script src="{{asset('/')}}assets/js/jquery.vmap.min.js"></script> -->
-<!-- <script src="{{asset('/')}}assets/js/jquery.vmap.usa.js"></script> -->
+
 <!-- jQuery Knob Chart -->
 <script src="{{asset('/')}}assets/js/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
 
-<!-- Tempusdominus Bootstrap 4 -->
-<!-- <script src="{{asset('/')}}assets/js/tempusdominus-bootstrap-4.min.js"></script> -->
+
 <!-- overlayScrollbars -->
 <script src="{{asset('/')}}assets/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->

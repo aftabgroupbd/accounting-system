@@ -16,8 +16,7 @@
   <!-- jQuery -->
   <script src="{{asset('/')}}assets/js/jquery.min.js"></script>
 </head>
-{{-- <body class="hold-transition login-page" oncontextmenu="return false" onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"  ondrag="return false" ondrop="return false"> --}}
-<body class="hold-transition login-page" >
+<body class="hold-transition login-page" oncontextmenu="return false" onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"  ondrag="return false" ondrop="return false">
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
@@ -110,44 +109,44 @@
           }
       });
   });
-    // $('body').bind('cut copy paste', function(event) {
-    //    event.preventDefault();
-    // });
-    // document.addEventListener('contextmenu',(e)=>{
-    //     e.preventDefault();
-    //   }
-    //   );
-    //   document.onkeydown = function(e) {
-    //   if(e.keyCode == 123) {
-    //      return false;
-    //   }
-    //   if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    //      return false;
-    //   }
-    //   if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    //      return false;
-    //   }
-    //   if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    //      return false;
-    //   }
-    //   if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    //      return false;
-    //   }
-    // }
-    // if (!$('body').hasClass('debug_mode')) {
-    //     var _z = console;
-    //     Object.defineProperty(window, "console", {
-    //         get: function () {
-    //             if ((window && window._z && window._z._commandLineAPI) || {}) {
-    //                 throw "Nice trick! but not permitted!";
-    //             }
-    //             return _z;
-    //         },
-    //         set: function (val) {
-    //             _z = val;
-    //         }
-    //     });
-    // }
+    $('body').bind('cut copy paste', function(event) {
+       event.preventDefault();
+    });
+    document.addEventListener('contextmenu',(e)=>{
+        e.preventDefault();
+      }
+      );
+      document.onkeydown = function(e) {
+      if(e.keyCode == 123) {
+         return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+         return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+         return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+         return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+         return false;
+      }
+    }
+    if (!$('body').hasClass('debug_mode')) {
+        var _z = console;
+        Object.defineProperty(window, "console", {
+            get: function () {
+                if ((window && window._z && window._z._commandLineAPI) || {}) {
+                    throw "Nice trick! but not permitted!";
+                }
+                return _z;
+            },
+            set: function (val) {
+                _z = val;
+            }
+        });
+    }
 </script>
 </body>
 </html>
